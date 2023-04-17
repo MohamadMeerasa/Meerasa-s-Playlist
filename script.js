@@ -91,6 +91,12 @@ function setProgress(e) {
   audio.currentTime = (clickX / width) * duration;
 }
 
+const volumeRange = document.getElementById('volume');
+// const audio = document.getElementById('audio');
+
+volumeRange.addEventListener('input', () => {
+  audio.volume = volumeRange.value;
+});
 
 
 // Event listeners
@@ -116,4 +122,3 @@ progressContainer.addEventListener('click', setProgress);
 
 // Song ends
 audio.addEventListener('ended', nextSong);
-
