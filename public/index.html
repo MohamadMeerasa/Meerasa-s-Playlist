@@ -38,6 +38,62 @@
         object-fit: cover;
         z-index: -1;
       }
+     /* Style the dropdown container */
+     .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropbtn {
+          background: rgb(81,203,76);
+          background: linear-gradient(90deg, rgba(81,203,76,1) 0%, rgba(9,120,121,1) 35%, rgba(0,255,136,1) 76%);
+          color: black;
+          padding: 16px;
+          font-size: 16px;
+          border-radius: 20px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          right: 0;
+          left: auto;
+          background: rgb(81,203,76);
+          background: linear-gradient(90deg, rgba(81,203,76,1) 0%, rgba(9,120,121,1) 35%, rgba(0,255,136,1) 76%);
+          min-width: 160px;
+          border-radius: 20px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content select {
+          width: 100%;
+          padding: 12px 16px;
+          border: none;
+          border-radius: 20px;
+          background: rgb(81,203,76);
+          background: linear-gradient(90deg, rgba(81,203,76,1) 0%, rgba(9,120,121,1) 35%, rgba(0,255,136,1) 76%);
+          font-size: 16px;
+          cursor: pointer;
+          text-align-last: right;
+        }
+
+        .dropdown-content select:hover {
+          background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+        }
+
+
+
     </style>
   </head>
   <body>
@@ -45,6 +101,66 @@
         <source src="images/sea-45590.mp4" type="video/mp4">
       </video>
     <h1>Meerasa's Favorite Music Playlist</h1>
+
+    <div class="dropdown">
+      <button class="dropbtn">Songs List</button>
+      <div class="dropdown-content">
+        <select>
+          <option>1. VaaVaathi Dhanush Reprise Version - Vaathi</option>
+          <option>2. Vaa Vaathi  - Vaathi</option>
+          <option>3. Unn Per Solla - Minsara Kanna</option>
+          <option>4. Mudhal Kanave - Majnu</option>
+          <option>5. Vaa Thalaiva - Varisu</option>
+          <option>6. Adiyae Unna Paathida - Vetrivel</option>
+          <option>7. Nenjil Maamazhai - Nimir</option>
+          <option>8. Naani Koni - Maatraan</option>
+          <option>9. Thalaivaa - Thalaiva</option>
+          <option>10. Kanja Poo - Viruman</option>
+          <option>11. Anandham Male - Poovae Unakaga</option>
+          <option>12. Arjunar Villu - Gilli</option>
+          <option>13. Paathu Paathu - Nee Varuvai Ena</option>
+          <option>14. Santhosam Santhosam - Youth</option>
+          <option>15. Oore Therinjikitten - Padikadhavan</option>
+          <option>16. Kandangi Kandangi - Jilla</option>
+          <option>17. Ranjithame - Varisu</option>
+          <option>18. Ennavale Ennavale - Ninaithean Vandhai</option>
+          <option>19. Vanna Nilavae - Ninaithean Vandhai</option>
+          <option>20. Irupathu Kodi - Thulladha Manamum Thullum</option>
+          <option>21. Thodu Thodu Enave - Thulladha Manamum Thullum</option>
+          <option>22. Innisai Paadi Varum - Thulladha Manamum Thullum</option>
+          <option>23. Oru Chinna Thamarai - Vettaikaran</option>
+          <option>24. Karikalan Kala Pola - Vettaikaran</option>
+          <option>25. Naan Adicha Thaanga - Vettaikaran</option>
+          <option>26. Onna Pola Oruthana - Vetrivel</option>
+          <option>27. Aattam Pottu - Vetrivel</option>
+          <option>28. Adhuva Idhuva - Vetrivel</option>
+          <option>29. Ovvundraai Thirudugiraai - Jeeva</option>
+          <option>30. Yembuttu Irukkuthu Aasai - Saravanan Iruka Bayam Yean</option>
+          <option>31. Per Vachaalum Vaikkaama - Dikkilona</option>
+          <option>32. Arabic Kuthu - Beast</option>
+          <option>33. Private Party - Don</option>
+          <option>34. Dippam Dappam - Kaathuvakula Rendu Kaadhal</option>
+          <option>35. Thee Thalapathy - Varisu</option>
+          <option>36. Jimmiki Ponnu - Varisu</option>
+          <option>37. Celebration Of Varisu - Varisu</option>
+          <option>38. July Malargale - Bagavathi</option>
+          <option>39. Ootha Ootha - Minsara Kanna</option>
+          <option>40. Vizhi Moodi Yosithaal - Ayan</option>
+          <option>41.Vaarayo Vaarayo - Aadhavan</option>
+          <option>42.Hasili Fisiliye - Aadhavan</option>
+          <option>43.Amali Thumali - Ko</option>
+          <option>44.Ennamo Yeadho - Ko</option>
+          <option>45.Yaar Indha - Thalaivaa</option>
+          <option>46.Enakkoru Sinegidhi</option>
+          <option>47.Ennavo Ennavo - Priyamanavalae</option>
+          <option>48.June July Maathadhil - Priyamanavalae</option>
+          <option>49.Mellinamae Mellinamae - Shajahan</option>
+          <option>50.Minnalai Pidithu - Shajahan</option>
+          <option>51.Sakkarai Nilave - Youth</option>
+        </select>
+      </div>
+    </div>
+
     <div class="music-container" id="music-container">
       <div class="music-info">
         <h4 id="title"></h4>
@@ -52,6 +168,7 @@
           <div class="progress" id="progress"></div>
         </div>
       </div>
+
 
       <audio src="https://www.jiosaavn.com/song/vaa-vaathi-dhanush-reprise-version/XUUbZUVgWwY" id="audio"></audio>
       <div class="img-container">
