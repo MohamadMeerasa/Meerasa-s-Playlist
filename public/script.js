@@ -21,7 +21,7 @@ const songs = ['1.VaaVaathi','2.Vaa Vaathi','3.Unn Per Solla','4.Mudhal Kanave',
         '40.Vizhi Moodi Yosithaal','41.Vaarayo Vaarayo','42.Hasili Fisiliye','43.Amali Thumali','44.Ennamo Yeadho','45.Yaar Indha',
         '46.Enakkoru Sinegidhi','47.Ennavo Ennavo','48.June July Maathadhil','49.Mellinamae Mellinamae','50.Minnalai Pidithu','51.Sakkarai Nilave','52.Aluva Puzha','53.Malare Ninne',
 ];// Keep track of song
-let songIndex = 0;
+let songIndex = 51;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
@@ -124,3 +124,16 @@ progressContainer.addEventListener('click', setProgress);
 
 // Song ends
 audio.addEventListener('ended', nextSong);
+
+
+const songSelect = document.getElementById("song-select");
+
+songSelect.addEventListener("change", () => {
+  const selectedSong = songSelect.value;
+  const selectedIndex = songs.indexOf(selectedSong);
+  
+  songIndex = selectedIndex;
+  loadSong(selectedSong);
+  playSong();
+});
+
