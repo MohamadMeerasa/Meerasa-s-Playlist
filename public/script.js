@@ -22,7 +22,7 @@ const songs = ['1.VaaVaathi','2.Vaa Vaathi','3.Unn Per Solla','4.Mudhal Kanave',
         '46.Enakkoru Sinegidhi','47.Ennavo Ennavo','48.June July Maathadhil','49.Mellinamae Mellinamae','50.Minnalai Pidithu','51.Sakkarai Nilave','52.Aluva Puzha','53.Malare Ninne',
         '54.Alaikaa Laikaa','55.Kaal Mulaitha Poovae','56.Engae Andha Vennila','57.Antartica','58.Oru Maalai','59.Mazhai Vara Pogudhe','60.Nooru Samigal'
 ];// Keep track of song
-let songIndex = 51;
+let songIndex = 53;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
