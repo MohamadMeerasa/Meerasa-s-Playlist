@@ -22,7 +22,8 @@ const songs = ['1.VaaVaathi','2.Vaa Vaathi','3.Unn Per Solla','4.Mudhal Kanave',
         '46.Enakkoru Sinegidhi','47.Ennavo Ennavo','48.June July Maathadhil','49.Mellinamae Mellinamae','50.Minnalai Pidithu','51.Sakkarai Nilave','52.Aluva Puzha','53.Malare Ninne',
         '54.Alaikaa Laikaa','55.Kaal Mulaitha Poovae','56.Engae Andha Vennila','57.Antartica','58.Oru Maalai','59.Mazhai Vara Pogudhe','60.Nooru Samigal','61.Vizhigalil Vizhigalil',
         '62.Annanoda Pattu','63.Devuda Devuda','64.Thuli Thuli Mazhaiyaai','65.Oru Naalaikkul','66.Ennai Thaalattum','67.Sil Sil Silala','68.Yaar Indha Devadhai','69.Vinmeen Vithaiyil',
-        '70.Yaaro Ivan','71.Megamai Vanthu','72.Naan Ready Than Varava'
+        '70.Yaaro Ivan','71.Megamai Vanthu','72.Naan Ready Than Varava','73.Thaen Thaen Thaen','74.Mainavey Mainavey','75.June Pona','76.Vannarapettayila','77. Manjal Veiyil','78.Asku Laska',
+        '79.Azhagooril Poothavale','80.Appadi Podu','81.Kokkarakko'
 ];// Keep track of song
 let songIndex = 60;
 
